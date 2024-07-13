@@ -36,10 +36,10 @@ endtry
 " about filetype
 filetype on
 filetype indent on
-filetype plugin on 
+filetype plugin on
 
 
-" key mapping 
+" key mapping
 let mapleader = " "
 inoremap jj <Esc>
 nnoremap <C-k> gt
@@ -52,8 +52,14 @@ autocmd WinEnter * setlocal cursorline
 autocmd WinLeave * setlocal nocursorline
 autocmd BufWritePre * :%s/\s\+$//e
 
-if executable("python3") 
+if executable("python3")
   autocmd BufRead,BufNewFile *.py noremap <F5> :w !python3<Enter>
 else
   autocmd BufRead,BufNewFile *.py noremap <F5> :echo "you need to install python first!"
 endif
+
+" Plug
+call plug#begin()
+  Plug 'wakatime/vim-wakatime'
+  Plug 'ap/vim-css-color'
+call plug#end()
