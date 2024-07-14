@@ -55,8 +55,13 @@ set splitright
 
 " about color
 syntax on
-" colorscheme gruvbox
-colorscheme molokai
+try
+  set background=dark
+  colorscheme gruvbox
+  highlight EndOfBuffer cterm=NONE ctermfg=bg ctermbg=bg
+catch
+endtry
+" colorscheme molokai
 " colorscheme wombat256
 
 " about filetype
