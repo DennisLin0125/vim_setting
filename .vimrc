@@ -6,6 +6,7 @@ call plug#begin()
   Plug 'vim-airline/vim-airline-themes'
   Plug 'preservim/nerdtree'
   Plug 'ctrlpvim/ctrlp.vim'
+  Plug 'mattn/emmet-vim'
 call plug#end()
 
 " appearance
@@ -98,15 +99,40 @@ let g:airline_symbols.readonly = '⭤'
 let g:airline_symbols.linenr = '⭡'
 
 
+" ================
 " nerdtree plug
+" ================
 nnoremap <silent> <F2> :NERDTreeToggle<Enter>
+" look better
 let NERDTreeMinimalUI = 1
+let g:NERDTreeWinSize = 25
+
+" reset root directory when switch dir in nerdTree
+let NERDTreecChDirMode = 2
+
+" delete buffer if file is deleted
+let NERDTreeAutoDeleteBuffer = 1
+
+" display empty subfolder correctly
+let NERDTreeCascadeSingleChildDir = 0
+
 " Close the tab if NERDTree is the only window remaining in it.
 autocmd BufEnter * if winnr('$') == 1 && exists('b:NERDTree') && b:NERDTree.isTabTree() | quit | endif
 
+" ================
 " ctrl p plug
+" ================
+let g:ctrlp_by_filename = 1
 let g:ctrlp_custom_ignore = {
   \ 'dir':  '\v[\/]\.(git|hg|svn)$',
   \ 'file': '\v\.(exe|so|dll)$',
   \ 'link': 'some_bad_symbolic_links',
   \ }
+
+" ==============
+" emmet plug
+" ==============
+let g:user_emmet_install_global = 0
+autocmd FileType html,css,sass,scss,less,vue,jsx,ts,tsx EmmetInstall
+autocmd FileType html,css,sass,scss,less,vue,jsx,tsx,ts imap <expr> <tab> emmet#expandAbbrIntelligent("\<tab>")
+
