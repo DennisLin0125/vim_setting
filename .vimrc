@@ -9,6 +9,7 @@ call plug#begin()
   Plug 'mattn/emmet-vim'
   Plug 'tpope/vim-surround'
   Plug 'tpope/vim-repeat'
+  Plug 'tomtom/tcomment_vim'
 call plug#end()
 
 " appearance
@@ -130,6 +131,12 @@ let g:ctrlp_custom_ignore = {
   \ 'file': '\v\.(exe|so|dll)$',
   \ 'link': 'some_bad_symbolic_links',
   \ }
+
+if executable('ag')
+  set grepprg=ag\ --nogroup\ --nocolor
+  let g:ctrlp_user_command = 'ag %s -l --nocolor -g ""'
+  let g:ctrlp_use_caching = 0
+endif
 
 " ==============
 " emmet plug
