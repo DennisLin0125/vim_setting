@@ -15,6 +15,7 @@ call plug#begin()
   Plug 'garbas/vim-snipmate'
   Plug 'honza/vim-snippets'
   Plug 'preservim/tagbar'
+  Plug 'mileszs/ack.vim'
 call plug#end()
 
 " appearance
@@ -152,6 +153,17 @@ autocmd FileType html,css,sass,scss,less,vue,jsx,tsx,ts imap <expr> <tab> emmet#
 
 
 " ============
-" tagbar
+" tagbar plug
 " ============
 noremap <F3> :TagbarToggle<CR>
+
+
+" ===========
+" ack plug
+" ===========
+if executable('ag')
+  let g:ackprg = 'ag --vimgrep'
+endif
+
+nnoremap FF :Ack!<Space>
+
