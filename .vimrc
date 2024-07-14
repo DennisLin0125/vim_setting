@@ -55,7 +55,9 @@ set splitright
 
 " about color
 syntax on
-colorscheme darkblue
+" colorscheme gruvbox
+colorscheme molokai
+" colorscheme wombat256
 
 " about filetype
 filetype on
