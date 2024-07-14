@@ -14,6 +14,7 @@ call plug#begin()
   Plug 'tomtom/tlib_vim'
   Plug 'garbas/vim-snipmate'
   Plug 'honza/vim-snippets'
+  Plug 'preservim/tagbar'
 call plug#end()
 
 " appearance
@@ -149,3 +150,8 @@ let g:user_emmet_install_global = 0
 autocmd FileType html,css,sass,scss,less,vue,jsx,ts,tsx EmmetInstall
 autocmd FileType html,css,sass,scss,less,vue,jsx,tsx,ts imap <expr> <tab> emmet#expandAbbrIntelligent("\<tab>")
 
+
+" ============
+" tagbar
+" ============
+noremap <F3> :TagbarToggle<CR>
