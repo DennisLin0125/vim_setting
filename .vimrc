@@ -10,6 +10,10 @@ call plug#begin()
   Plug 'tpope/vim-surround'
   Plug 'tpope/vim-repeat'
   Plug 'tomtom/tcomment_vim'
+  Plug 'MarcWeber/vim-addon-mw-utils'
+  Plug 'tomtom/tlib_vim'
+  Plug 'garbas/vim-snipmate'
+  Plug 'honza/vim-snippets'
 call plug#end()
 
 " appearance
