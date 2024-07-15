@@ -167,21 +167,18 @@ autocmd FileType html,css,sass,scss,less,vue,jsx,tsx,ts imap <expr> <tab> emmet#
 " ============
 noremap <F3> :TagbarToggle<CR>
 
-
 " ===========
 " ack plug
 " ===========
+nnoremap FF :Ack!<Space>
 if executable('ag')
   let g:ackprg = 'ag --vimgrep'
 endif
-
-nnoremap FF :Ack!<Space>
 
 " ============
 " rainbow plug
 " ============
 let g:rainbow_active = 1
-
 
 " =============
 " vim-gitgutter
