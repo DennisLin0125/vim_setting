@@ -43,6 +43,9 @@
 * surround <https://github.com/tpope/vim-surround>
 
 * repeat <https://github.com/tpope/vim-repeat>
+* rainbow <https://github.com/luochen1990/rainbow>
+
+* vim-gitgutter <https://github.com/airblade/vim-gitgutter>
 
 ### 一般開發
 
