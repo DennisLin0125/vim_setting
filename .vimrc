@@ -17,6 +17,7 @@ call plug#begin()
   Plug 'preservim/tagbar'
   Plug 'mileszs/ack.vim'
   Plug 'luochen1990/rainbow'
+  Plug 'airblade/vim-gitgutter'
 call plug#end()
 
 " appearance
@@ -178,5 +179,10 @@ nnoremap FF :Ack!<Space>
 " ============
 " rainbow plug
 " ============
-
 let g:rainbow_active = 1
+
+
+" =============
+" vim-gitgutter
+" ==============
+autocmd BufWritePost * GitGutter
