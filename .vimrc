@@ -16,6 +16,7 @@ call plug#begin()
   Plug 'honza/vim-snippets'
   Plug 'preservim/tagbar'
   Plug 'mileszs/ack.vim'
+  Plug 'luochen1990/rainbow'
 call plug#end()
 
 " appearance
@@ -174,3 +175,8 @@ endif
 
 nnoremap FF :Ack!<Space>
 
+" ============
+" rainbow plug
+" ============
+
+let g:rainbow_active = 1
