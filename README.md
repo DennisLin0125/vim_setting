@@ -22,7 +22,7 @@
 * F2 啟動/關閉 NERDTree 視窗
 * F3 啟動/關閉 Tagbar 視窗
 * F5 執行程式 （Python）
-* Leader key = " "  
+* Leader key = " "
 
 ## 使用套件
 
@@ -33,19 +33,14 @@
 ### 編輯器功能加強
 
 * NERDTree <https://github.com/scrooloose/nerdtree>
-
 * ctrlP <https://github.com/ctrlpvim/ctrlp.vim>
-
 * vim-airline <https://github.com/vim-airline/vim-airline>
-
 * vim-airline-themes <https://github.com/vim-airline/vim-airline-themes>
-
 * surround <https://github.com/tpope/vim-surround>
-
 * repeat <https://github.com/tpope/vim-repeat>
 * rainbow <https://github.com/luochen1990/rainbow>
-
 * vim-gitgutter <https://github.com/airblade/vim-gitgutter>
+* youCompleteMe <https://github.com/ycm-core/YouCompleteMe>
 
 ### 一般開發
 

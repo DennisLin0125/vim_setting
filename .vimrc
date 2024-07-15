@@ -18,6 +18,7 @@ call plug#begin()
   Plug 'mileszs/ack.vim'
   Plug 'luochen1990/rainbow'
   Plug 'airblade/vim-gitgutter'
+  Plug 'ycm-core/YouCompleteMe'
 call plug#end()
 
 " appearance
