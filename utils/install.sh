@@ -41,7 +41,7 @@ hash git >/dev/null && /usr/bin/env git clone https://github.com/DennisLin0125/v
 }
 
 # make symbolic links
-echo "link vimrc and gvimrc to your home directory.."
+echo "link vimrc to your home directory.."
 ln -s $vim_folder/vimrc $vim_rc
 
 # run PlugInstall to install all plugins
