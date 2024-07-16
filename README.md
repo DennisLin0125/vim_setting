@@ -36,10 +36,8 @@ sh <(curl -L https://github.com/DennisLin0125/vim_setting/raw/master/utils/insta
 # vimPlug
 curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
     https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
-# change home dir
-cd ~
 # clone
-git clone https://github.com/DennisLin0125/vim_setting.git
+cd ~ && git clone https://github.com/DennisLin0125/vim_setting.git
 # make symbolic link
 ln -s ./.vim/.vimrc .
 # install plugin and quit vim
