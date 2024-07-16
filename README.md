@@ -31,23 +31,12 @@ sh <(curl -L https://github.com/DennisLin0125/vim_setting/raw/master/utils/insta
 ```
 
 * 方法2：
-vimPlug
 
 ```bash
 curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
     https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
-```
-
-* clone
-
-```bash
 cd ~
 git clone https://github.com/DennisLin0125/vim_setting.git
-```
-
-* link
-
-```bash
 ln -s ./.vim/.vimrc .
 vim +'PlugInstall --sync' +qa
 ```
