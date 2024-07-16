@@ -34,6 +34,7 @@ curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
 * clone
 
 ```bash
+cd ~
 git clone https://github.com/DennisLin0125/vim_setting.git
 ```
 
