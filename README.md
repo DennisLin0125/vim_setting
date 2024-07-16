@@ -1,6 +1,4 @@
-# 專案介紹 : 我的vim環境設定檔
-
-## 寫程式需要滑鼠嗎？
+# 我的vim環境設定檔
 
 ## 初衷
 
@@ -23,6 +21,33 @@
 * F3 啟動/關閉 Tagbar 視窗
 * F5 執行程式 （Python）
 * Leader key = " "
+
+## Install
+
+* vimPlug
+
+```bash
+curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
+    https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+```
+
+* clone
+
+```bash
+git clone https://github.com/DennisLin0125/vim_setting.git
+```
+
+* link
+
+```bash
+ln -s ./.vim/.vimrc .
+```
+
+* open your vim then type
+
+```bash
+:PlugInstall
+```
 
 ## 使用套件
 
