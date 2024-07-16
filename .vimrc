@@ -1,6 +1,6 @@
 " Plug
 call plug#begin()
-  Plug 'wakatime/vim-wakatime'
+"  Plug 'wakatime/vim-wakatime'
   Plug 'ap/vim-css-color'
   Plug 'vim-airline/vim-airline'
   Plug 'vim-airline/vim-airline-themes'
