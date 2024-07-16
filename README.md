@@ -18,13 +18,18 @@
 ### 快捷鍵設定
 
 * F2 啟動/關閉 NERDTree 視窗
-* F3 啟動/關閉 Tagbar 視窗
-* F5 執行程式 （Python）
 * Leader key = " "
 
 ## Install
 
-* vimPlug
+* 方法1:
+
+```bash
+sh <(curl -L https://github.com/DennisLin0125/vim_setting/raw/master/utils/install.sh)
+```
+
+* 方法2：
+vimPlug
 
 ```bash
 curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
@@ -42,12 +47,7 @@ git clone https://github.com/DennisLin0125/vim_setting.git
 
 ```bash
 ln -s ./.vim/.vimrc .
-```
-
-* open your vim then type
-
-```bash
-:PlugInstall
+vim +'PlugInstall --sync' +qa
 ```
 
 ## 使用套件
