@@ -18,6 +18,8 @@
 ### 快捷鍵設定
 
 * F2 啟動/關閉 NERDTree 視窗
+* F3 啟動/關閉 Tagbar 視窗
+* F5 自動測式 Python
 * Leader key = " "
 
 ## Install
