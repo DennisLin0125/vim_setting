@@ -24,13 +24,13 @@
 
 ## Install
 
-* 方法1:
+* 自動安裝:
 
 ```bash
 sh <(curl -L https://github.com/DennisLin0125/vim_setting/raw/master/utils/install.sh)
 ```
 
-* 方法2：
+* 手動安裝：
 
 ```bash
 # vimPlug
