@@ -34,6 +34,7 @@ set showcmd
 set scrolloff=3
 set smartcase
 set noshowmode
+set rnu
 
 " Enable status bar color
 set t_Co=256
@@ -184,3 +185,4 @@ let g:rainbow_active = 1
 " vim-gitgutter
 " ==============
 autocmd BufWritePost * GitGutter
+
